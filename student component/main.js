@@ -95,3 +95,12 @@ for (const student of students) {
         studentComponent = 
     }
 }
+
+
+
+function createRawHTML(element, attribute, value, content) {
+    ```
+<${element} ${attribute}="${value}">${content}</${element}>
+
+    ```
+}
