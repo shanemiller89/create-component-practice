@@ -80,27 +80,30 @@ const students = [
 const createStudentComponent = (students) => {
     return `
         <div class="student">
-            <h1>${students[].name}</h1>
-            <section>${students[].subject}</section>
-            <aside>${students[].info}</aside>
+            <h1>${students.name}</h1>
+            <section>${students.subject}</section>
+            <aside>${students.info}</aside>
         </div>
     `
 }
 
+let studentComponent = document.querySelector("#container");
+
 for (const student of students) {
-    let studentComponent = ""
     if (student.score >= 60) {
-        studentComponent = 
+        studentComponent += createStudentComponent;
     } else {
-        studentComponent = 
+        studentComponent += createStudentComponent;
     }
 }
 
 
 
 function createRawHTML(element, attribute, value, content) {
-    ```
+    `
 <${element} ${attribute}="${value}">${content}</${element}>
 
-    ```
+    `;
 }
+
+console.log("Test")
